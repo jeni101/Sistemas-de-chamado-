@@ -1,5 +1,6 @@
 from cadastro_chamados import *
 from limpar_tela import *
+from remover_chamados_finalizados import *
 
 def busca():
     while True:
@@ -11,6 +12,7 @@ def busca():
             |ver lista de ID..........|1|
             |buscar ID diretamente....|2|
             |buscar por descrição.....|3|
+            |mudar status.............|4|
             |___________________________|
             """)
         
@@ -79,3 +81,16 @@ def busca():
                 else:
                     print("Nenhum chamado encontrado para a descrição informada.")
 
+        elif metodo =='4':
+            
+            limpar_tela()
+            
+            print("Chamados disponíveis:")
+            for id_chamado in chamados:
+                
+                print(f"\nID: {id_chamado}, Descrição: {chamados[id_chamado]['descricao']}, "
+                      f"Prioridade: {chamados[id_chamado]['prioridade']}, "
+                      f"Status: {chamados[id_chamado]['status']}, "
+                      f"Área: {chamados[id_chamado]['area']}")
+            
+            mudar_status()
