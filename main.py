@@ -1,6 +1,7 @@
 from cadastro_chamados import *
 from busca_chamados import *
 from limpar_tela import *
+from estatistica_chamados import *
 
 def escolhas():
     while True:
@@ -11,7 +12,10 @@ def escolhas():
             |          MENU           |
             |_________________________|
             |cadastrar chamado......|1|
-            |listar chamados........|2|                      
+            |listar chamados........|2|
+            |estatisticas...........|3|
+            |                         |
+            |sair...................|x|
             |_________________________|
             """)
         
@@ -25,9 +29,14 @@ def escolhas():
             limpar_tela()
             busca()
             
+        elif decisao =='3':
+            limpar_tela()
+            estatisticas()
         else:
             print('escola invalida tente novamente.')
 
 
 escolhas()
     
+
+

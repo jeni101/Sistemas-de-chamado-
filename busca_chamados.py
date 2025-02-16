@@ -78,4 +78,4 @@ def busca():
                               f"Área: {chamado['area']}")
                 else:
                     print("Nenhum chamado encontrado para a descrição informada.")
-                
+
