@@ -31,16 +31,22 @@ def estatisticas():
     
     
     input(f"""
-          |---------------------------------------------------|
-          |                   ESTATÍSTICAS:                   |
-          |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|
-          | TOTAL DE CHAMADOS:             |        {total_chamados:<3}       |
-          | CHAMADOS EM ABERTO:            |        {chamados_em_aberto:<3}       |
-          | CHAMADOS FINALIZADOS:          |        {chamados_finalizados:<3}       |
-          | CHAMADOS URGENTES:             |        {chamados_urgentes:<3}       |
-          | CHAMADOS DE PRIORIDADE MEDIANA:|        {chamados_media_prioridade:<3}       |
-          | CHAMADOS COM POUCA URGÊNCIA:   |        {chamados_baixa_prioridade:<3}       |
-          |________________________________|__________________|
+           ---------------------------------------------------------------
+          |                          ESTATÍSTICAS:                        |
+          |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|
+          |--------------------------------------------|------------------|
+          | TOTAL DE CHAMADOS  .   .   .   .   .   .   |        {total_chamados:<3}       |
+          |--------------------------------------------|------------------|
+          | CHAMADOS EM ABERTO  .   .   .   .   .   .  |        {chamados_em_aberto:<3}       |
+          |--------------------------------------------|------------------|
+          | CHAMADOS FINALIZADOS  .   .   .    .   .   |        {chamados_finalizados:<3}       |
+          |--------------------------------------------|------------------|
+          | CHAMADOS URGENTES  .   .   .   .   .   .   |        {chamados_urgentes:<3}       |
+          |--------------------------------------------|------------------|
+          | CHAMADOS DE PRIORIDADE MEDIANA  .   .   .  |        {chamados_media_prioridade:<3}       |
+          |--------------------------------------------|------------------|
+          | CHAMADOS DE POUCA URGÊNCIA  .   .   .   .  |        {chamados_baixa_prioridade:<3}       |
+          |____________________________________________|__________________|
           
           Precione ENTER para voltar ao menu.
           """)
