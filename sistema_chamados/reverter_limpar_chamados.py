@@ -9,12 +9,12 @@ def limpar():
     decisao = input('\n(s/n): ')
     if decisao.lower() =='s':
         chamados.clear()
-        print('Lista limpa com sucesso.')
+        print('\nLista limpa com sucesso.')
         input('Precione enter para continuar.')
     elif decisao.lower() =='n':
         print('voltando....')
     else:
-        print('opcao invalida tente novamente.')
+        print('Opção invalida tente novamente.')
 
 
 
@@ -24,10 +24,11 @@ def reverter():
     global contador
     global chamados
     dicionario_invertido = dict(reversed(list(chamados.items())))
-    if contador % 2 ==0:
+    if contador ==0 or contador % 2 ==0:
         contador += 1
         for id_chamado in dicionario_invertido:
-                    
+            
+            print('Chamados disponíveis:')
             print(f"\nID: {id_chamado}, Descrição: {chamados[id_chamado]['descricao']}, "
                 f"Prioridade: {chamados[id_chamado]['prioridade']}, "
                 f"Status: {chamados[id_chamado]['status']}, "

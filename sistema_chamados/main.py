@@ -12,16 +12,16 @@ def escolhas():
              _________________________
             |          MENU           |
             |_________________________|
-            |cadastrar chamado......|1|
-            |listar chamados........|2|
-            |estatisticas...........|3|
-            |limpar chamados........|4|
+            |Cadastrar chamado......|1|
+            |Listar chamados........|2|
+            |Estatisticas...........|3|
+            |Limpar chamados........|4|
             |                         |
-            |sair...................|x|
+            |Sair...................|x|
             |_________________________|
             """)
         
-        decisao = input('Selecione o numero desejado: ')
+        decisao = input('Selecione o número desejado: ')
         
         if decisao == '1':
             limpar_tela()
